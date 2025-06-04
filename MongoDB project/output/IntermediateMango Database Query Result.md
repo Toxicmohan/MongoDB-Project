@@ -20,7 +20,7 @@ db.details.find({ marks: { $elemMatch: { $gte: 80 } } });
 ### Output:
 
 ```json
-[
+
   {
     "_id": 2,
     "name": "Shifa Banu",
@@ -28,7 +28,7 @@ db.details.find({ marks: { $elemMatch: { $gte: 80 } } });
       95,
       80
     ]
-]
+}
 ```
 
 ---
