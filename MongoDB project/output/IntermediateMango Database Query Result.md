@@ -21,14 +21,49 @@ db.details.find({ marks: { $elemMatch: { $gte: 80 } } });
 
 ```json
 
+[
+  {
+    "_id": 1,
+    "details": [
+      {
+        "name": "bhumika",
+        "age": 23
+      }
+    ],
+    "marks": [80, 89, 90]
+  },
   {
     "_id": 2,
-    "name": "Shifa Banu",
-    "marks": [
-      95,
-      80
-    ]
-}
+    "details": [
+      {
+        "name": "geetha",
+        "age": 21
+      }
+    ],
+    "marks": [90, 85, 70]
+  },
+  {
+    "_id": 3,
+    "details": [
+      {
+        "name": "mahadevaswamy",
+        "age": 25
+      }
+    ],
+    "marks": [86, 79, 70]
+  },
+  {
+    "_id": 4,
+    "details": [
+      {
+        "name": "manjunath",
+        "age": 22
+      }
+    ],
+    "marks": [88, 81, 78]
+  }
+]
+
 ```
 
 ---
@@ -44,34 +79,7 @@ db.details.find({ marks: { $elemMatch: { $gte: 80, $lte: 85 } } });
 ### Output:
 
 ```json
-[
-  {
-    "_id": 1,
-    "name": "Lakshmi",
-    "marks": [
-      75,
-      80,
-      90
-    ]
-  },
-  {
-    "_id": 2,
-    "name": "Shifa Banu",
-    "marks": [
-      95,
-      80
-    ]
-  },
-  {
-    "_id": 4,
-    "name": "Akash",
-    "marks": [
-      70,
-      80,
-      90
-    ]
-  }
-]
+[]
 ```
 
 ---
